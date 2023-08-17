@@ -6,7 +6,7 @@ const About = () => {
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full px-4 grid grid-cols2 gap-8">
           <div className="text-center pb-8 pl-4">
-            <p className="text-4xl font-bold inline border-b-4 border-pink-600">
+            <p className="text-4xl font-bold inline border-b-4 border-[#FF7F50]">
               About
             </p>
           </div>
@@ -23,11 +23,9 @@ const About = () => {
             <div>
               <p>
                 {" "}
-                I am passionate about building excelent software that omproves
-                the lives of those around me i specialize in creating software
-                for clients ranging for individuals and small-buisness all the
-                way to large entreprise coporations what would you do if you had
-                a software expert available at your finance
+                I am passionate about building excelent software . 
+                I have a strong background in developing robust and scalable software solutions, specializing in web applications
+                 I would love to connect and discuss potential collaborations
               </p>
             </div>
           </div>

@@ -31,5 +31,21 @@ export const data=[
         live:"",
     },
 
+    {
+        id:4,
+        name:"React JS Application",
+        image:RealEst,
+        github:"",
+        live:"",
+    },
 
+    {
+        id:4,
+        name:"React JS Application",
+        image:RealEst,
+        github:"",
+        live:"",
+    },
+    
+   
 ]

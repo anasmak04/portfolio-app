@@ -24,10 +24,13 @@ const Navbar = () => {
 
       {/* Menu */}
       <ul className="hidden md:flex">
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Contact</li>
+        <li>
+          <Link to="home" smoth={true} duration={500}>Home</Link>
+        </li>
+        <li><Link to="about" smoth={true} duration={500}>About</Link></li>
+        <li><Link to="work" smoth={true} duration={500}>Work</Link></li>
+        <li><Link to="skills" smoth={true} duration={500}>Skills</Link></li>
+        <li><Link to="contact" smoth={true} duration={500}>Contact</Link></li>
       </ul>
 
       {/* Hambugrer */}
@@ -52,36 +55,27 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="flex fixed flex-col left-0 top-[35%] hidden md:flex">
+      <div className="flex fixed flex-col left-0 top-[35%]  hidden md:flex">
         <ul>
-          <li className="w-[160px] h-[60px] bg-blue-600 flex justify-between items-center ml-[-100px] hover:ml-[-10px]">
+          <li className="w-[160px] h-[60px] m-2 bg-[#0077B5] flex justify-between items-center ml-[-100px] hover:ml-[-10px]">
             <a
-              href="/"
+              href="https://www.linkedin.com/in/anas-elmakhloufi.com"
               className="flex justify-between items-center w-full text-gray-300"
             >
               Linkedin <FaLinkedinIn size={30} />
             </a>
           </li>
 
-          <li className="w-[160px] h-[60px] bg-blue-600 flex justify-between items-center ml-[-100px] hover:ml-[-10px]">
+          <li className="w-[160px] h-[60px] m-2 bg-[#181717] flex justify-between items-center ml-[-100px] hover:ml-[-10px]">
             <a
-              href="/"
-              className="flex justify-between items-center w-full text-gray-300"
-            >
-              Facebook <FaFacebook size={30} />
-            </a>
-          </li>
-
-          <li className="w-[160px] h-[60px] bg-black flex justify-between items-center ml-[-100px] hover:ml-[-10px]">
-            <a
-              href="/"
+              href="https://www.github/anasmak04.com"
               className="flex justify-between items-center w-full text-gray-300"
             >
               Github <FaGithub size={30} />
             </a>
           </li>
 
-          <li className="w-[160px] h-[60px] bg-black flex justify-between items-center ml-[-100px] hover:ml-[-10px]">
+          <li className="w-[160px] h-[60px] m-2 bg-[#D44638] flex justify-between items-center ml-[-100px] hover:ml-[-10px]">
             <a
               href="/"
               className="flex justify-between items-center w-full text-gray-300"
