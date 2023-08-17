@@ -19,7 +19,8 @@ const Navbar = () => {
     <div className="fixed w-full h-[100px] flex justify-between items-center bg-[#0a192f] px-4 text-gray-300">
       {/* Logo */}
       <div className="z-10">
-        <img src={Logo} alt="Logo Picture" className="w-[50px]" />
+        {/* <img src={Logo} alt="Logo Picture" className="w-[50px]" /> */}
+        <span className="text-5xl  text-[#D44638] font-light">AE</span>
       </div>
 
       {/* Menu */}

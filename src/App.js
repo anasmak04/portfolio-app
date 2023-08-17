@@ -8,7 +8,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="">
+    <div className="scroll-container overflow-y-scroll h-screen">
       <Navbar />
       <Home />
       <About />
