@@ -1,21 +1,12 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
-import ScrollReveal from 'scrollreveal';
+
 
 const Home = () => {
   
  
-  useEffect(() => {
-    const sr = ScrollReveal();
-
-    sr.reveal('.my-element', {
-      duration: 1000,
-      distance: '50px',
-      origin: 'bottom',
-      easing: 'ease-out',
-    });
-  }, []);
+  
   return (
     <div name="home" className="bg-[#0a192f] w-full h-screen ">
       {/* container */}
