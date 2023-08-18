@@ -68,27 +68,52 @@ const Navbar = () => {
       >
         <ul>
           <li>
-            <Link to="home" smoth={true} duration={500}>
+            <Link
+              className="py-6 text-4xl"
+              to="home"
+              smoth={true}
+              duration={500}
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link to="about" smoth={true} duration={500}>
+            <Link
+              className="py-6 text-4xl"
+              to="about"
+              smoth={true}
+              duration={500}
+            >
               About
             </Link>
           </li>
           <li>
-            <Link to="work" smoth={true} duration={500}>
+            <Link
+              className="py-6 text-4xl"
+              to="work"
+              smoth={true}
+              duration={500}
+            >
               Work
             </Link>
           </li>
           <li>
-            <Link to="skills" smoth={true} duration={500}>
+            <Link
+              className="py-6 text-4xl"
+              to="skills"
+              smoth={true}
+              duration={500}
+            >
               Skills
             </Link>
           </li>
           <li>
-            <Link to="contact" smoth={true} duration={500}>
+            <Link
+              className="py-6 text-4xl"
+              to="contact"
+              smoth={true}
+              duration={500}
+            >
               Contact
             </Link>
           </li>
