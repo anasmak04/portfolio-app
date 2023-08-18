@@ -49,10 +49,13 @@ const Navbar = () => {
         }
       >
         <ul>
-          <li className="py-6 text-4xl">Home</li>
-          <li className="py-6 text-4xl">About</li>
-          <li className="py-6 text-4xl">Skills</li>
-          <li className="py-6 text-4xl">Contact</li>
+        <li>
+          <Link to="home" smoth={true} duration={500}>Home</Link>
+        </li>
+        <li><Link to="about" smoth={true} duration={500}>About</Link></li>
+        <li><Link to="work" smoth={true} duration={500}>Work</Link></li>
+        <li><Link to="skills" smoth={true} duration={500}>Skills</Link></li>
+        <li><Link to="contact" smoth={true} duration={500}>Contact</Link></li>
         </ul>
       </div>
 

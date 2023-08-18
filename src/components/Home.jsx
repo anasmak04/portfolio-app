@@ -1,20 +1,33 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
+import ScrollReveal from 'scrollreveal';
 
 const Home = () => {
+  
+ 
+  useEffect(() => {
+    const sr = ScrollReveal();
+
+    sr.reveal('.my-element', {
+      duration: 1000,
+      distance: '50px',
+      origin: 'bottom',
+      easing: 'ease-out',
+    });
+  }, []);
   return (
     <div name="home" className="bg-[#0a192f] w-full h-screen ">
       {/* container */}
       <div className="max-w-[1000px]  mx-auto flex flex-col justify-center px-8 h-full space-y-4  text-white capitalize">
-        <p className="text-[#FF7F50] ">Hi , My name is</p>
+        <p className="text-[#FF7F50] my-element">Hi , My name is</p>
         <h1 className="text-4xl sm-text-7xl font-bold text-[#ccd6f6]">
           Anas Elmakhloufi
         </h1>
-        <h2 className="text-4xl sm-text-7xl font-bold text-[#8892b0]">
+        <h2 className="text-4xl sm-text-7xl font-bold text-[#8892b0] my-element">
           I'm a Full Stack Devloper .
         </h2>
-        <p className=" text-[#8892b0] max-w-[700px]">
+        <p className=" text-[#8892b0] max-w-[700px] my-element">
         I am excited about the opportunity to contribute my skills and knowledge to create impactful software solutions that drive business growth and enhance user experiences. If you're looking for a dedicated software engineer who is passionate about delivering high-quality code and exceeding expectations, I would love to connect and discuss potential collaborations.
         </p>
         <div className="">
