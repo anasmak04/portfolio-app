@@ -10,46 +10,55 @@ import {
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Logo from "../assets/logo1.png";
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
+
 
 const Navbar = () => {
   const [nav, setNav] = useState(true);
   const toggleNav = () => setNav(!nav);
+  
   return (
     <div className="fixed w-full h-[100px] flex justify-between items-center bg-[#0a192f] px-4 text-gray-300">
       {/* Logo */}
       <div className="z-10">
         {/* <img src={Logo} alt="Logo Picture" className="w-[50px]" /> */}
-        <span className="text-5xl  text-[#D44638] font-light">AE</span>
+        <span className="text-xl  text-[#D44638] font-bolder">Anas Mak</span>
       </div>
 
       {/* Menu */}
       <ul className="hidden md:flex">
         <li>
-          <Link to="home" smoth={true} duration={500}>
+          <Link to="home" spy={true} offset={50} smooth={true} duration={500}>
             Home
           </Link>
         </li>
         <li>
-          <Link to="about" smoth={true} duration={500}>
+          <Link to="about" spy={true} offset={50} smooth={true} duration={500}>
             About
           </Link>
         </li>
         <li>
-          <Link to="work" smoth={true} duration={500}>
+          <Link to="work" spy={true} offset={50} smooth={true} duration={500}>
             Work
           </Link>
         </li>
         <li>
-          <Link to="skills" smoth={true} duration={500}>
+          <Link to="skills" spy={true} offset={50} smooth={true} duration={500}>
             Skills
           </Link>
         </li>
         <li>
-          <Link to="contact" smoth={true} duration={500}>
-            Contact
+          <Link
+            to="contact"
+            spy={true}
+            offset={50}
+            smooth={true}
+            duration={500}
+          >
+            Contact Me
           </Link>
         </li>
+
       </ul>
 
       {/* Hambugrer */}
@@ -68,20 +77,17 @@ const Navbar = () => {
       >
         <ul>
           <li>
-            <Link
-              className="py-6 text-4xl"
-              to="home"
-              smoth={true}
-              duration={500}
-            >
-              Home
-            </Link>
+          <Link to="home" spy={true} offset={50} smooth={true} duration={500}>
+            Home
+          </Link>
           </li>
           <li>
             <Link
+            to="about"
               className="py-6 text-4xl"
-              to="about"
-              smoth={true}
+              spy={true}
+              offset={50}
+              smooth={true}
               duration={500}
             >
               About
@@ -89,9 +95,11 @@ const Navbar = () => {
           </li>
           <li>
             <Link
+            to="work"
               className="py-6 text-4xl"
-              to="work"
-              smoth={true}
+              spy={true}
+              offset={50}
+              smooth={true}
               duration={500}
             >
               Work
@@ -101,7 +109,9 @@ const Navbar = () => {
             <Link
               className="py-6 text-4xl"
               to="skills"
-              smoth={true}
+              spy={true}
+              offset={50}
+              smooth={true}
               duration={500}
             >
               Skills
@@ -111,10 +121,12 @@ const Navbar = () => {
             <Link
               className="py-6 text-4xl"
               to="contact"
-              smoth={true}
+              spy={true}
+              offset={50}
+              smooth={true}
               duration={500}
             >
-              Contact
+              Contact Me
             </Link>
           </li>
         </ul>

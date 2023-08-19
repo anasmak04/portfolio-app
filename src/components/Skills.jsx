@@ -9,9 +9,11 @@ import Tailwind from "../assets/tailwind.png";
 import Node from "../assets/node.png";
 import Java from "../assets/java.png";
 import Spring from "../assets/spring.png";
+import { Element } from "react-scroll";
+
 const Skills = () => {
   return (
-    <div name="skills" className="bg-[#0a192f] w-full h-auto ">
+    <Element name="skills" className="bg-[#0a192f] w-full h-auto ">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center text-gray-300 w-full h-full">
         <div>
           <p className="text-4xl font-bold inline border-b-4 border-[#FF7F50] ">
@@ -62,7 +64,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Element>
   );
 };
 

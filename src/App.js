@@ -4,8 +4,7 @@
  import Skills from "./components/Skills";
  import Work from "./components/Work";
 import Navbar from "./components/Navbar";
-
-
+import Footer from "./components/Footer";
 function App() {
   return (
     <div className="scroll-container overflow-y-scroll h-screen">
@@ -15,6 +14,7 @@ function App() {
       <Skills />
       <Work />
      <Contact />
+     <Footer />
     </div>
 
     
