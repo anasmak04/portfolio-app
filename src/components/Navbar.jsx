@@ -12,14 +12,14 @@ import Footer from "./Footer";
 const Navbar = () => {
   const [nav, setNav] = useState(true);
   const toggleNav = () => setNav(!nav);
-  const logo = '<Anas />'
+  const logo = "<Anas />";
   return (
     <div>
       <div className="fixed w-full h-[100px]  flex justify-between items-center bg-[#0a192f] px-4 text-gray-300">
         {/* Logo */}
         <div className="z-10">
           {/* <img src={Logo} alt="Logo Picture" className="w-[50px]" /> */}
-          <span className="text-xl  text-[#D44638] font-bolder ">  {logo}</span>
+          <span className="text-xl  text-[#D44638] font-bolder "> {logo}</span>
         </div>
 
         {/* Menu */}
