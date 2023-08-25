@@ -1,6 +1,6 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import Typed from 'react-typed';
 
 
@@ -30,7 +30,7 @@ const Home = () => {
         </p>
         <div className="">
           <button className="group flex items-center border-2 px-8 py-3 hover:bg-[#FF7F50] hover:border-white">
-            <Link to="work" smoth={true} duration={500}>
+            <Link to="/work" smoth={true} duration={500}>
               view work
             </Link>
             <span className="group-hover:rotate-90 duration-300">

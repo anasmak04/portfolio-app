@@ -5,16 +5,23 @@
  import Work from "./components/Work";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { BrowserRouter , Routes, Route } from "react-router-dom";
+
 function App() {
   return (
-    <div className="scroll-container overflow-y-scroll h-screen">
-      <Navbar />
-      <Home />
-      <About />
-      <Skills />
-      <Work />
-     <Contact />
-     <Footer />
+    <div className="scroll-container overflow-y-scroll  h-screen">
+       <BrowserRouter>
+        <Routes>
+        <Route exact path="/" element={<Navbar />} />
+        <Route exact path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/work" element={<Work />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/footer" element={<Footer />} />
+        </Routes>
+    </BrowserRouter>
+
     </div>
 
     

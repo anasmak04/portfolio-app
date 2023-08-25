@@ -37,6 +37,7 @@ const Contact = () => {
         <button className="text-white border-2 outline-none hover:bg-[#FF7F50] hover:border-white px-4 py-3 my-8 mx-auto flex items-center">
           Let's collaborate
         </button>
+        
       </form>
     </div>
   );
