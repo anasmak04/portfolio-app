@@ -18,7 +18,7 @@ const Navbar = () => {
   const toggleNav = () => setNav(!nav);
   
   return (
-    <div className="fixed w-full h-[100px] flex justify-between items-center bg-[#0a192f] px-4 text-gray-300">
+    <div className="fixed w-full h-[100px] z-1 flex justify-between items-center bg-[#0a192f] px-4 text-gray-300">
       {/* Logo */}
       <div className="z-10">
         {/* <img src={Logo} alt="Logo Picture" className="w-[50px]" /> */}
@@ -72,19 +72,19 @@ const Navbar = () => {
         className={
           nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center text-center"
+            : "absolute top-0 left-0 w-full h-screen bg-black  flex flex-col justify-center items-center text-center"
         }
       >
         <ul>
-          <li>
-          <Link to="home" spy={true} offset={50} smooth={true} duration={500}>
+          <li className="py-6">
+          <Link to="home"  className="text-4xl" spy={true} offset={50} smooth={true} duration={500}>
             Home
           </Link>
           </li>
-          <li>
+          <li className="py-6">
             <Link
             to="about"
-              className="py-6 text-4xl"
+              className="text-4xl"
               spy={true}
               offset={50}
               smooth={true}
@@ -93,10 +93,10 @@ const Navbar = () => {
               About
             </Link>
           </li>
-          <li>
+          <li className="py-6">
             <Link
             to="work"
-              className="py-6 text-4xl"
+              className="text-4xl"
               spy={true}
               offset={50}
               smooth={true}
@@ -105,9 +105,9 @@ const Navbar = () => {
               Work
             </Link>
           </li>
-          <li>
+          <li className="py-6">
             <Link
-              className="py-6 text-4xl"
+              className="text-4xl"
               to="skills"
               spy={true}
               offset={50}
@@ -117,9 +117,9 @@ const Navbar = () => {
               Skills
             </Link>
           </li>
-          <li>
+          <li className="py-6">
             <Link
-              className="py-6 text-4xl"
+              className="text-4xl"
               to="contact"
               spy={true}
               offset={50}
