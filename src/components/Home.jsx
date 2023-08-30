@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
@@ -7,9 +7,8 @@ const Home = () => {
     <div name="home" className="bg-[#0a192f] w-full h-screen ">
       <div className="max-w-[1000px] pt-12 md:pt-none  mx-auto flex flex-col justify-center px-8 h-full space-y-4  text-white capitalize ">
         <p className="text-[#FF7F50] my-element">Hi , My name is </p>
-        <h1 className="text-4xl sm-text-7xl font-bold text-[#ccd6f6]">
-          {" "}
-          anas elmakhloufi{" "}
+        <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
+          anas elmakhloufi
         </h1>
         <h2 className="text-4xl sm-text-7xl font-bold text-[#8892b0] my-element capitalize">
           I'm a CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK
