@@ -8,7 +8,6 @@ import react from "../assets/react.png";
 import Tailwind from "../assets/tailwind.png";
 import Node from "../assets/node.png";
 import Java from "../assets/java.png";
-import Spring from "../assets/spring.png";
 
 const Skills = () => {
   return (
@@ -97,19 +96,10 @@ const Skills = () => {
           <div className=" shadow-md shadow-[#040c16] h-[200px] flex justify-center items-center flex-col hover:scale-110 duration-500 ">
             <img
               src={Java}
-              className="w-20 mx-auto animate-bounce-slow"
+              className="w-20  mx-auto animate-bounce-slow"
               alt="icon"
             />
             <p className="my-4">Java</p>
-          </div>
-
-          <div className=" shadow-md shadow-[#040c16] h-[200px] flex justify-center items-center flex-col hover:scale-110 duration-500 ">
-            <img
-              src={Spring}
-              className="w-20 mx-auto animate-bounce-slow"
-              alt="icon"
-            />
-            <p className="my-4">Spring boot</p>
           </div>
         </div>
       </div>
