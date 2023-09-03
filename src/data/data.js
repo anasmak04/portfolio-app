@@ -1,12 +1,13 @@
 import WorkIm from '../assets/projects/workImg.jpeg'
 import RealEst from '../assets/projects/realestate.jpg'
+import Gestion from '../assets/projects/gestion.png'
 
 export const data=[
     {
         id:1,
-        name:"React JS Application",
-        image:WorkIm,
-        github:"",
+        name:"Angular & Spring Boot",
+        image:Gestion,
+        github:"https://github.com/anasmak04/Gestion-des-stagiaires-Projet-fil-rouge",
         live:"",
     },
     {
